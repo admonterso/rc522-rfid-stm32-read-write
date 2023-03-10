@@ -9,5 +9,5 @@ uart2 - for debbug
 SPI1 - for connecting with rc522
 also LED
 
-
+card for wich this wroks are Mifare classic 1k (chippest <3)
 evrery time when you slide the card on card on sector 2 will be read and random 16 bit token will be wrote there, you can chack data through debug UART.
