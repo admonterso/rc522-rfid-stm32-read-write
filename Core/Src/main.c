@@ -116,7 +116,7 @@ void led(uint8_t n) {
 		HAL_Delay(100);
 	}
 }
-uint8_t * generate_random() { //this will generate random number in range l and r
+uint8_t * generate_random() { //this will generate random number in range 55 to 126 than converted to ASCII
     uint8_t i;
     static uint8_t chars[20];
 
@@ -201,9 +201,9 @@ p = generate_random();
 				  if (status == MI_OK) {
 					  RC_size = MFRC522_SelectTag(sn);
 						  if(RC_size != 0){
-							  status = MFRC522_Auth(PICC_AUTHENT1A, 2, sectorKeyA[2], sn);
+							  status = MFRC522_Auth(PICC_AUTHENT1A, 2, sectorKeyA[2], sn); //authenticate card
 							  if(status == MI_OK){
-								  status = MFRC522_Read(2, str1);
+								  status = MFRC522_Read(2, str1); //read the 2 sector
 								  if(status == MI_OK){
 									  //sprintf((char *)buff, "%02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X\n\r", str1[0],str1[1],str1[2],str1[3],str1[4],str1[5],str1[6],str1[7], str1[8],str1[9],str1[10],str1[11],str1[12],str1[13],str1[14],str1[15]);
 									  sprintf((char *)buff, "CARD DATA: \"%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\" ", str1[0],str1[1],str1[2],str1[3],str1[4],str1[5],str1[6],str1[7], str1[8],str1[9],str1[10],str1[11],str1[12],str1[13],str1[14],str1[15]);
