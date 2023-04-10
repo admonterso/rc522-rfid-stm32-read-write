@@ -1,6 +1,6 @@
 # Read/Write 16byte Token on Mifare Classic using STM32 and RC522 RFID reader.
 ## Problem
-In order to restrict duplication of the cards or **replay attacks**, there are few different menthods like rolling codes, two factor auth and more. In this repository, there is a different approach to prevent replay attacks.
+In order to restrict duplication of the cards or **replay attacks**, there are a few different methods like rolling codes, two-factor auth, and more. In this repository, there is a different approach to preventing replay attacks. 
 
 ## Solution
 One of the ways is to generate something like **rolling-codes**. We call the data, written inside the card, token. The token will be checked if is valid while reading having its own logic.
