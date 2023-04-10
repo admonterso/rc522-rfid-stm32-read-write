@@ -1,5 +1,5 @@
-# -admonterso-rc522_rfid-stm32-read-write
-this example shows how to write 16 byte token with rc522 on Mifare classic cards
+# Read/Write data on Mifare Classic using STM32 and RC522 RFID reader.
+This example shows how to write 16 byte data (token) with RC522 on Mifare Classic cards.
 
 I am using STM32f103cbt6. (bluePill)
 and CUBEMX IDE
