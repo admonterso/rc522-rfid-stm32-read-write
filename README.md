@@ -10,7 +10,7 @@ This example shows how to write 16 byte data (token) with RC522 on Mifare Classi
 
 In this project was used `STM32f103cbt6` (bluePill) and [CUBEMX IDE](https://www.st.com/en/development-tools/stm32cubeide.html).
 Settings:
-- UART2 - for debbug
+- UART2 - for debug
 - SPI1 - for connecting with rc522
 - LED - PC13 as an indicator
 
