@@ -14,5 +14,5 @@ Settings:
 - SPI1 - for connecting with rc522
 - LED - PC13 as an indicator
 
-Cards for which this works are Mifare Classic 1k (cheapest <3). Each time when you slide a card on sector 2, it will read and generate random 16 bit token that be written on the same sector.
+This works for Mifare Classic 1k type cards. Each time when you slide a card on sector 2, it will read and generate random 16 bit token that be written on the same sector.
 
